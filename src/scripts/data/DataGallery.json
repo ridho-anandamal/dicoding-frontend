@@ -1,0 +1,23 @@
+{
+    "gallery": [{
+            "id": 0,
+            "imageUrl": "hero-image_1.jpg",
+            "caption": "Foto Orang yang sedang memasak"
+        },
+        {
+            "id": 1,
+            "imageUrl": "hero-image_2.jpg",
+            "caption": "Foto Konsumen menyantap masakan kami"
+        },
+        {
+            "id": 2,
+            "imageUrl": "hero-image_3.jpg",
+            "caption": "Foto Malam Hari"
+        },
+        {
+            "id": 3,
+            "imageUrl": "hero-image_4.jpg",
+            "caption": "Foto Bakwan"
+        }
+    ]
+}
