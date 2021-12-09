@@ -1,0 +1,80 @@
+.hero-image {
+    background-image: url(../../public/images/hero-main-large.jpg);
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #00000094;
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 140%;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+
+/* Tampilkanlah minimal width 1000px pada viewport width >= 1200px. */
+
+@media only screen and (min-width: 1200px) {
+    .hero-image {
+        min-width: 1000px;
+    }
+}
+
+
+/* Jika ukuran viewport width < 1200px, maka hero element ditampilkan full-width. */
+
+@media only screen and (max-width: 1199px) {
+    .hero-image {
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 140%;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-image {
+        height: 200px;
+        background-image: url(../../public/images/hero-main-small.jpg);
+    }
+    .hero-content {
+        margin: 0 20px
+    }
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,25 @@
+/* Skip Content */
+
+.skip-to-content {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    text-decoration: none;
+    padding: 16px;
+    margin: 100px 0 0 -200px;
+    background-color: rgb(18, 109, 214);
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.skip-to-content:hover {
+    background-color: black;
+}
+
+.skip-to-content:active {
+    background-color: #3a3a3a;
+}
+
+.skip-to-content:focus {
+    margin-left: 0px;
+}
