@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+p,
+ul,
+ul li {
+    color: rgb(116, 116, 116);
+    line-height: 170%;
+    font-size: 14px;
+}
+
+
+/* Color */
+
+.bg-dark-blue {
+    background-color: #312ED8;
+}
+
+.bg-blue {
+    background-color: #2da1cf;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.color-blue {
+    color: #2da1cf !important;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black !important;
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 100px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.nav-item a:hover {
+    color: #2da1cf !important;
+}
+
+.button-dropdown {
+    display: none;
+}
+
+.button-dropdown button {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 4px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.button-dropdown button:hover {
+    cursor: pointer;
+}
+
+
+/* Header */
+
+header {
+    padding: 50px;
+    height: 80vh;
+    background-image: linear-gradient( #312ED8, #3E90CB);
+}
+
+header .content {
+    flex-basis: 80%;
+    padding: 0 50px;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img,
+.content-image img {
+    height: 100%;
+}
+
+.content .sub-header,
+.content .header,
+.content .body-text {
+    color: white;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.content .sub-header {
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.content .header {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.image-template {
+    background-color: #cacaca;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Content Introduction */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.padding-margin-50px {
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.padding-50px {
+    padding: 0 50px;
+}
+
+.content-text,
+.content-image {
+    flex-basis: 50%;
+    padding: 0 50px;
+    height: 300px;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-text h2 {
+    color: #2da1cf;
+    font-size: 2rem;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+
+/* Article Blog */
+
+.article {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.article h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 140%;
+    color: #2da1cf;
+    text-align: center;
+}
+
+.article article {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.article article h3 {
+    margin: 10px 0;
+}
+
+.image-article {
+    width: 100%;
+    height: 200px;
+}
+
+.image-article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Biodata */
+
+.biodata {
+    padding: 40px 0;
+}
+
+.biodata h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 140%;
+    color: #2da1cf;
+    text-align: center;
+}
+
+.image-circle {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.flex-biodata {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-biodata {
+    padding: 20px;
+}
+
+.content-biodata span {
+    font-weight: 600;
+}
+
+.biodata-header {
+    font-size: 24px;
+    line-height: 120%;
+    color: #2da1cf;
+    margin: 10px 0;
+}
+
+.biodata-body {
+    margin: 10px 0;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 850px) {
+    p {
+        font-size: 12px;
+    }
+    /* Navbar */
+    nav {
+        padding: 20px;
+    }
+    .nav-logo {
+        font-size: 16px;
+    }
+    .nav-item {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-item a {
+        padding: 0;
+        margin: 5;
+    }
+    /* Header */
+    header {
+        padding: 0;
+    }
+    header .content,
+    header .image {
+        padding: 20px;
+    }
+    header .content {
+        padding-right: 20px;
+    }
+    .content .sub-header {
+        font-weight: 500;
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+    .content .header {
+        font-size: 2rem;
+        line-height: 130%;
+    }
+    .image img,
+    .content-image img {
+        width: 100%;
+        height: auto;
+    }
+    /* Content Introduction */
+    .padding-margin-50px {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .padding-50px {
+        padding: 20px;
+    }
+    .content-text,
+    .content-image {
+        padding: 0 20px;
+    }
+    .content-text h2 {
+        font-size: 2rem;
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+    /* Article Blog */
+    .article {
+        padding: 0;
+    }
+    .article h2 {
+        padding-top: 20px;
+    }
+    .article article {
+        padding: 0;
+        margin: 0 10px;
+    }
+    /* Biodata */
+    .flex-biodata {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-biodata {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    /* Navbar */
+    nav {
+        flex-direction: column;
+    }
+    .flex-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-logo {
+        font-size: 12px;
+    }
+    .nav-list {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        transition: cubic-bezier();
+    }
+    .nav-item a {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .button-dropdown {
+        display: block;
+    }
+    /* Header */
+    header {
+        padding: 0;
+        height: auto;
+    }
+}
